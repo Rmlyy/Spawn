@@ -1,0 +1,36 @@
+# Spawn plugin developed by Rmly @ https://rmly.dev
+# Don't forget to check my other plugins as well: https://www.spigotmc.org/members/rmly.1075826/
+
+# Commands and Permissions:
+# > /setspawn - Set the spawn point to your current location. (spawn.set)
+# > /spawn <Player> - Teleport you or another player to the spawn point. (spawn.use) - (spawn.others)
+# > /reloadspawn - Reload the plugin's configuration. (spawn.reload)
+# > /spawnhelp - Shows information about the plugin. (No Permission)
+
+# Commands Aliases:
+# > /setspawn - /ssetspawn
+# > /spawn - /sspawn
+# > /reloadspawn - /rreloadspawn
+# > /spawnhelp - /sspawnhelp
+
+# Placeholders:
+# > %executor% - The executor's name.
+# > %target% - The target's name.
+
+# Settings:
+Prefix: '&e| &f'
+TeleportOnJoin: true # Teleport the player to the spawn point on join
+
+# Messages:
+Errors:
+  NoConsole: '&cThis command cannot be executed from the console.'
+  NoPermission: '&cYou do not have permission to execute this command.'
+  NotSet: '&cThe spawn point is not set. Use /setspawn to set the spawn point.'
+  Offline: '&cThe specified player is offline.'
+
+Success:
+  SpawnSet: 'Spawn point successfully set.'
+  Teleported: 'You have been teleported to the spawn point.'
+  TeleportedOther: 'You have teleported &e%target% &fto the spawn point.'
+  TeleportedBy: 'You have been teleported by &e%executor% &fto the spawn point.'
+  Reloaded: 'Configuration reloaded.'

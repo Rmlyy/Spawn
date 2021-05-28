@@ -1,0 +1,28 @@
+name: Spawn
+version: ${project.version}
+main: dev.rmly.spawn.Main
+api-version: 1.16
+authors: [ Rmly ]
+description: Lightweight spawn plugin with teleport to spawn on join feature.
+website: https://rmly.dev
+commands:
+  setspawn:
+    description: Set the spawn point to your current location.
+    permission: spawn.set
+    aliases:
+      - ssetspawn
+  spawn:
+    description: Teleport you or another player to the spawn point.
+    permission: spawn.use
+    usage: <Player>
+    aliases:
+      - sspawn
+  reloadspawn:
+    description: Reload the plugin's configuration.
+    permission: spawn.reload
+    aliases:
+      - rreloadspawn
+  spawnhelp:
+    description: Shows information about the plugin.
+    aliases:
+      - sspawnhelp
