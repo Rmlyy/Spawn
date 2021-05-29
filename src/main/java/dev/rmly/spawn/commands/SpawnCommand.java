@@ -49,7 +49,7 @@ public class SpawnCommand implements CommandExecutor {
         if (args.length == 0) {
             p.teleport(spawn);
             p.sendMessage(teleported);
-        } else if (args.length > 1) {
+        } else if (args.length == 1) {
             if (!p.hasPermission("spawn.others")) {
                 p.sendMessage(noPermission);
                 return true;
